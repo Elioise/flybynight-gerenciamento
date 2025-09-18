@@ -27,8 +27,8 @@ CREATE TABLE produtos(
 
 
     -- E aqui, transformas fornecedor_id em uma CHAVE ESTRANGEIRA
-    --que faz REFERÊNCIA á CHAVE PRÍMARIA (id) de outra tabela
-    --(fornecedores)
+    -- que faz REFERÊNCIA á CHAVE PRÍMARIA (id) de outra -- tabela
+    -- (fornecedores)
     FOREIGN KEY (fornecedor_id) REFERENCES fornecedores(id)
 );
 ```
