@@ -2,4 +2,6 @@
 
 ## Projeto: Fly By Night - Gerenciamento de Estoque
 
+```sql
 Create DATABASE flybynight_elioise CHARACTER SET utf8mb4;
+```
