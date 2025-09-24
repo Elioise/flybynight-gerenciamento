@@ -9,6 +9,17 @@
 ### Criar a tabela noticias
 
 
-````sql
+```sql
 CREATE DATABASE microblog_elioise CHARACTER SET utf8mb4;
+```
+
+```sql
+    CREATE TABLE usuario(
+        id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+        nome VARCHAR (100) NOT NULL,
+        email VARCHAR(100) NOT NULL,
+        senha VARCHAR(225) NOT NULL,
+        tipo ENUM('admin','editor') NOT NULL
+
+    );
 ```
