@@ -23,3 +23,16 @@ CREATE DATABASE microblog_elioise CHARACTER SET utf8mb4;
 
     );
 ```
+
+```sql
+CREATE TABLE noticias(
+    id  INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    titulo VARCHAR(100) NOT NULL,
+    resumo TEXT NOT NULL,
+    texto TEXT NOT NULL,
+    imagem VARCHAR(50)NOT NULL,
+    data DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    usuario_id INT NOT NULL,
+    FOREIGN KEY (usuario_id) REFERENCES usuario(id)
+);
+```
