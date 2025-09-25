@@ -14,7 +14,7 @@ CREATE DATABASE microblog_elioise CHARACTER SET utf8mb4;
 ```
 
 ```sql
-    CREATE TABLE usuario(
+    CREATE TABLE usuarios(
         id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
         nome VARCHAR (100) NOT NULL,
         email VARCHAR(100) NOT NULL,
@@ -33,6 +33,6 @@ CREATE TABLE noticias(
     imagem VARCHAR(50)NOT NULL,
     data DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     usuario_id INT NOT NULL,
-    FOREIGN KEY (usuario_id) REFERENCES usuario(id)
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
 );
 ```
