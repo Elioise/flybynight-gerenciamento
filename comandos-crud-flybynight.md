@@ -60,9 +60,14 @@ UPDATE produtos SET preco = 125 WHERE fornecedor_id = 4;
 -- o produto seja o SMARTPHONE (produto_id = 7)
 UPDATE lojas_produtos SET estoque = 7
 WHERE loja_id = 4 AND produto_id = 1;
+ ```
+
+
+## Excluindo registros
+```sql
+DELETE FROM produtos WHERE id = 4;
 
 ```
-
 
 
 
