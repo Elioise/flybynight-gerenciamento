@@ -32,3 +32,14 @@ function inserirProduto($conexao, $nome, $descricao, $preco, $quantidade, $forne
     $consulta->execute();
 
 }
+
+
+function buscarProdutosPorId($conexao, $id){
+ 
+    $sql = "SELECT * FROM produtos WHERE id = :id";
+    $consulta = $conexao->prepare($sql);
+    $consulta->bindValue(":id", $id);
+    $consulta->execute();
+    return $consulta->fetch();
+ 
+}
