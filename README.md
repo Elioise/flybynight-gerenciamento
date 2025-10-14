@@ -1,2 +1,2 @@
 # flybynight-gerenciamento
-Atividades de manipulações de bancos de dados
+Atividades de manipulação de banco de dados
