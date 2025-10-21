@@ -35,7 +35,7 @@ function inserirFornecedor($conexao, $nome){
     // Executamos a consulta com o comando e o valor
     $consulta->execute();
 }
-
+///////////////////////////////////////
 /* Recebe o id do fornecedor a ser carregado (e depois atualizado) */
 function buscarFornecedorPorId($conexao, $id){
     $sql = "SELECT * FROM fornecedores WHERE id = :id";
