@@ -19,7 +19,7 @@ $fornecedores = buscarFornecedores($conexao);
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <h1>Fornecedores</h1>
+    <h1> Listar de Fornecedores</h1>
     <a href="inserir.php">+ Novo fornecedor</a>
     <a href="../index.php">← Voltar</a>
 
