@@ -2,10 +2,13 @@
 require_once  "../src/loja_crud.php";
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $nome = $_POST['nome'];
-    inserirloja($conexao, $nome);
 
-    header("location:listar.php");
-    exit;
+    
+
+    //inserirloja($conexao, $nome);
+
+    //header("location:listar.php");
+   // exit;
 }
 ?>
 
